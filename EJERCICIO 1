@@ -1,0 +1,76 @@
+#Ejercicio 9
+a= input("Inserta la primera palabra:  ")
+b= input("Inserta la segunda palabra:  ")
+c= input("Inserta la tercera palabra:  ")
+d= input("Inserta la cuarta palabra:  ")
+print(a + b + c + d)
+
+#Ejercicio 2
+a = int(input())
+b = int(input())
+c = int(input())
+print((a*b*c)/(a+b+c))
+
+#Ejercicio 8
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+f = int(input())
+g = int(input())
+h = int(input())
+print((a+b+c+d+e+f+g+h)/8)
+
+#Ejercicio 1
+a= float(input ("Escribe un número: "))
+b= float(input ("Escribe otro número: "))
+if a*20==b:
+ print("El numero 2 es 20 veces mayor que el número 1")
+else:
+ print("El numero 2 no es 20 veces mayor que el número 1")
+
+#Ejercicio 7
+a=int(input())
+b=int(input())
+c=int(input())
+print(a==b or a+3>b )
+
+#Ejercicio 6
+a=int(input())
+b=int(input())
+c=int(input())
+print((a<b) or (b!=c))
+
+#Ejercicio 3
+a= float(input("Escribe el primer numero: "))
+b= float(input("Escribe el segundo numero: "))
+c= float(input("Escribe el tercer numero: "))
+if (a+1==b) and (b+1==c):
+    print("Los números están en orden")
+else:
+    print("Los número no están en orden")
+
+#Ejercicio 4
+a= int(input("Escribe el primer numero: "))
+b= int(input("Escribe el segundo numero: "))
+c= int(input("Escribe el tercer numero: "))
+d= int(input("Escribe el cuarto numero: "))
+if (0>a) and (0>b) and (0>c) and (0>d):
+    print("Los numeros son negativos")
+else:
+    print("No todos los numeros son negativos")
+
+#Ejercicio 5
+a= int(input("Inserta un número: "))
+if (a%2==0):
+    print("El número es par")
+else:
+    print("El numero no es par")
+
+#Challenge
+a= int(input("Inserta el peso de la sandía: "))
+if (a%2==0) and(a>0):
+    print("La sandía se puede partir en dos")
+else:
+    print("La sandía no se puede partir en dos")
