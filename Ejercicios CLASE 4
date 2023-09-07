@@ -1,0 +1,97 @@
+listaSuper = ["manzanas", "limón", "cereal", "Nutella"]
+print(listaSuper[3])
+print(listaSuper)
+listaSuper.append("salsa")
+print(listaSuper)
+listaSuper.pop()
+listaSuper.pop(3)
+print(listaSuper)
+print(len(listaSuper))
+
+ceros= [0]*100
+print(ceros)
+
+for i in range (100):
+    ceros.append(i)
+
+print(ceros)
+
+n=100
+suma=0
+for i in range (n+1):
+
+lista=[1,2,3,4,5,6,7,1,1,1]
+print(lista.count(1))
+print(lista)
+lista.reverse()
+print(lista)
+print(lista.index(7))
+
+lista=["Juan", "Ernesto", "Jaime"]
+lista.insert(0,"Karla")
+lista.insert("Karla") marca error
+print(lista)
+
+palabra=input("inserta la palabra: ")
+palabra.reverse()
+print(palabra)
+
+frase = "bob"
+frasealreves=frase.reverse()
+print(frase)
+print(frasealreves)
+
+#EJERCICIO 1
+lista = [1]
+lista.append(2)
+lista.append(3)
+lista.append(4)
+lista.append(5)
+print(lista)
+
+#EJERCICIO 2 - MANERA 1
+lista = [1,2,3,4,5,6,7,8,9,10]
+print(lista)
+
+lista.pop()
+lista.remove(1)
+lista.remove(2)
+lista.remove(4)
+lista.remove(5)
+lista.insert(0,3)
+lista.insert(0,3)
+print(lista)
+
+#EJERCICIO 2 - MANERA 2 CON CICLOS
+lista = [1,2,3,4,5,6,7,8,9,10]
+print(lista)
+lista.pop()
+for i in range(5):
+    lista.remove(i+1)
+
+for i in range(3):
+    lista.insert(0,3)
+
+print(lista)
+
+#EJERCICIO 3 NUMEROS PARES QUE SE QUEDEN
+lista = [1,2,3,4,5,6,7,8,9,10]
+lista.remove(1)
+lista.remove(3)
+lista.remove(5)
+lista.remove(7)
+lista.remove(9)
+print(lista)
+
+lista = [1,1]
+lista.append(2)
+lista.append(3)
+lista.append(5)
+lista.append(8)
+lista.append(13)
+lista.append(21)
+print(lista)
+
+a = [1,1]
+a.insert
+print = a
