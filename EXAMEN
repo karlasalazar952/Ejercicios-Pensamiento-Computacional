@@ -1,0 +1,60 @@
+#Programa para calcular el voltaje en circuito lineal. Pedir corriente y resistencia v=i*r
+a = int(input("Ingresa la corriente: "))
+b = int(input("Ingresa la resistencia: "))
+
+print("El voltaje del circuito lineal es:" ,a*b)
+
+#Programa sobre TS. Pedir precio de vuelo y sacar la diferencia en precio 8000 y el porcentaje de incremento
+a = int(input("Ingresa el precio del vuelo el año pasado: "))
+boleto= 8000
+print("La diferencia del precio del boleto del año pasado con TS es: " , boleto-a, "y el porcentaje de incremento es de: ", (a/boleto)*100 )
+
+#Programa que pida un número y te diga si es impar o par
+a= int(input("Inserta un número: "))
+if (a%2==0):
+    print("El número es par")
+else:
+    print("El numero no es par")
+
+#Programa de agregar 4 libros, eliminar dos y cambiar dos de lugar
+libros = ["Biblia", "Corán", "El principito", "El diario de Greg", "Programación en Phyton", "Algoritmos avanzados", "Álgebra de Baldor"]
+libros.append("El cuento de la criada")
+libros.append("Cometas en el cielo")
+libros.append("Cenicienta")
+libros.append("El extranjero")
+libros.remove("El diario de Greg")
+libros.remove("Algoritmos avanzados")
+libros.remove("Corán")
+libros.insert(5,"Corán")
+libros.remove("Biblia")
+libros.insert(4,"Biblia")
+print(libros)
+
+#Programa que pide un lado del triángulo y de su área
+a = int(input("Ingresa el lado del triángulo equilétero: "))
+print("El área del triángulo equilátero es: ", (a*a)/2)
+
+#Programa que pide datos de un triangulo y de su área
+a = int(input("Ingresa la base del triángulo: "))
+b = int(input("Ingresa la altura del triángulo: "))
+print("El área del triángulo equilátero es: ", (a*b)/2)
+
+#Programa sobre Lupe, recibir penta y hexa y decir cual tiene mayor área
+a = int(input("Ingrese el perímetro del hexagono: "))
+b = int(input("Ingrese el apotema del hexagono: "))
+c = int(input("Ingrese el perímetro del pentagono: "))
+d = int(input("Ingrese el apotema del pentagono: "))
+
+if(0.5*(a*b) > (c*d)/2):
+    print("Lupe, la mejor figura para utilizar es el hexagono")
+
+else:
+    print("Lupe, la mejor figura para escoger es el pentagono")
+
+#Programa que pide un texto y si tiene más de 500 caracteres marca error
+a = str(input("Ingrese un párrafo de texto: "))
+if(len(a)>500):
+    print("Error")
+else:
+    print("El texto tiene menos de 500 caracteres")
+
