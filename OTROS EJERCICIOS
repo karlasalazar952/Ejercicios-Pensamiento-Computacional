@@ -1,0 +1,61 @@
+'''import math
+pi = 3.141596535
+floorpi = math.floor(pi)
+ceilpi = math.ceil(pi)
+print(ceilpi)
+    
+#funcion que regrese un numero aleatorio
+
+import random
+def rng (a,b):
+    return random.randint(a,b)
+
+#for i in range (10):
+randomnumber=rng(2,8)
+print (randomnumber)
+
+#funcion que recibe dos numeros y regrese el piso de la división de estos
+import math
+def pisodivision (a,b):
+    return math.floor(a/b)
+    
+
+#funcion que reciba dos numeros y regresa maximo comun divisor
+def maximocomundivisor (a,b):
+    return math.gcd(a,b)
+
+#funcion que calcule el area del circulo
+def areacirculo(radio):
+    area = (math.pi)*(radio**2)
+
+    return area
+
+print(areacirculo(1))
+
+#funcion que reciba area del circulo y regrese el radio
+import math
+def calculoradio (area):
+    return math.sqrt(area/math.pi)
+
+
+def factorial(n):
+
+    producto = 1
+    for i in range(1, n+1):
+        producto = producto * i
+
+    return producto
+
+print(factorial(4))'''
+
+import random
+def orden(lista):
+    return
+
+numeros =[]
+
+for i in range(15):
+    numeros.append(random.randint(1,100))
+
+print(numeros)
+
