@@ -1,0 +1,85 @@
+#Ejercicio 5
+notas = ["Do", "Re", "Mi", "Fa", "Sol", "La", "Si"]
+notas.remove("Fa")
+notas.remove("Mi")
+notas.insert(0,"Si")
+notas.insert(1, "Si")
+notas.insert(4, "Re")
+notas.insert(5, "Do")
+notas.insert(6, "Si")
+notas.insert(7, "La")
+notas.insert(9, "Sol")
+notas.insert(12, "Si")
+notas.insert(13, "La")
+notas.insert(14, "La")
+print(notas)
+
+#Ejercicio 8
+arreglo = [12,456,2,123]
+arreglo.insert(0,2)
+arreglo.insert(2,123)
+arreglo.pop()
+arreglo.pop()
+print(arreglo)
+
+#Ejercicio 3
+año = int(input())
+
+if año % 4 == 0:
+	print("Es un año bisiesto")
+if año % 4 != 0:
+	print("No es un año bisiesto")
+
+#Ejercicio 9
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+f = int(input())
+
+print((a+c+f)-(b+d+f))
+
+#Ejercicio 4
+a=int(input('Introduce un numero: '))
+if a%2==0:
+    a1='es un numero par'
+elif a%2!=0:    
+    a1='es un numero impar'
+if a>0:
+    ala=',positivo'
+elif a<0 :
+    ala=',negativo'
+if a>100:
+    a3='y mayor que 100'
+elif a<100 :
+    a3='y menor que 100'
+
+print(a,a1,ala,a3)    
+
+#Ejercicio 2
+a=(input('Introduce un dia de la semana en minuscula: '))
+if a=='lunes':
+    print(a, 'es el dia 1 de la semana')
+elif a=='martes':
+    print(a, 'es el dia 2 de la semana')
+elif a=='miercoles':
+    print(a, 'es el dia 3 de la semana')
+elif a=='jueves':
+    print(a, 'es el dia 4 de la semana')
+elif a=='viernes':
+    print(a, 'es el dia 5 de la semana')
+elif a=='sabado':
+    print(a, 'es el dia 6 de la semana')
+elif a=='domingo':
+    print(a, 'es el dia 7 de la semana')
+else:
+    print('error')
+
+#Ejercicio 7
+a = input('Escriba un nombre: ')
+arreglo = ['Jose Miguel', 'Carlos', 'Manuel', 'Memo' ]
+if (a == arreglo):
+    print('True')
+else:
+    print('False')
