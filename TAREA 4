@@ -1,0 +1,116 @@
+#Ejercicio 1
+num = int(input("Ingresa un número: "))
+suma = 0
+for i in range (num +1):
+    suma += i
+
+print("La suma de",num, "a cero es: ", suma)
+
+#Ejercicio 2 
+total = 0
+cuenta = 0
+
+while True:
+    numero= int(input("Introduce un número: "))
+
+    if numero == 0:
+        break
+
+    total +=numero
+    cuenta+=1
+
+if cuenta > 0:
+    promedio = total/cuenta
+    print("El promedio de los números ingresados es: ", promedio)
+
+else:
+    print("No hay números válidos")
+
+
+#Ejercicio 3
+n = int(input ("Ingresa la cantidad de artículos de la lista: "))
+
+lista_compras= []
+
+for i in range (n):
+    artículo = input("Ingresa tu artículo #" + str(i+1)+ ": ")
+    lista_compras.append(artículo)
+
+lista_compras.sort()
+
+print("La lista de compras en orden alfabético es: ")
+for artículo in lista_compras:
+    print(artículo)
+
+
+#Ejercicio 4
+n = int(input("Ingrese la cantidad de números en la lista: "))
+
+numeros = []
+
+for i in range(n):
+    numero = int(input(f"Ingrese el número {i + 1}: "))
+    numeros.append(numero)
+
+numeros_pares = [numero for numero in numeros if numero % 2 == 0]
+
+print("Los numeros pares en la lista son: ")
+for num in numeros_pares:
+    print(num)
+
+
+#Ejercicio 5
+texto = input("Ingresa un texto: ")
+
+vocales = "aeiouAEIOU"
+
+vocales_encontradas = ""
+
+for letra in texto:
+    if letra in vocales:
+        vocales_encontradas += letra
+
+print("Vocales encontradas:", vocales_encontradas)
+
+
+#Ejercicio 6
+def divisible(numero):
+    if numero % 243 == 0:
+        return True
+    else:
+        return False
+
+numero = int(input("Ingrese un número: "))
+
+resultado = divisible(numero)
+
+if resultado:
+    print(f"{numero} es divisible por 243")
+else:
+    print(f"{numero} no es divisible por 243")
+
+
+#Ejercicio 7
+def multiplicación(cadena, n):
+    if n <= 0:
+        return ""
+    else:
+        resultado = cadena * n
+        return resultado
+
+
+cadena = input("Ingrese una string: ")  
+n = int(input("Ingrese el número de veces que se multiplica: ")) 
+
+resultado = multiplicación(cadena, n)
+
+print(f"El resultado de multiplicar '{cadena}' por {n} veces es: {resultado}")
+
+
+#Challenge
+n = int(input("Ingrese el número de filas: "))
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
